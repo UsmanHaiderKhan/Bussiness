@@ -45,6 +45,10 @@ body {
     scroll-behavior: smooth;
 }
 
+.bg-color {
+    background-color: #f4f4f4;
+}
+
 .logo-font {
     font-family: 'Industry-Bold';
     font-size: 36px
@@ -395,6 +399,27 @@ body {
         text-decoration: none;
         color: #21b66b;
     }
+
+.btn-load-more {
+    font-size: 14px;
+    color: #fff;
+    background-color: #00712c;
+    border: 0;
+    outline: 0;
+    padding: 10px 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 32px;
+    width: 250px;
+    height: 60px;
+    font-size: 17px;
+}
+
+    .btn-load-more:hover {
+        background-color: #00481c;
+        color: white;
+    }
+
 /*================ Client Styling =================*/
 #client {
     background-color: #f8f8f8;
@@ -567,6 +592,22 @@ body {
         font-size: 40px
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
+    }
+
     #HOME {
         height: 60vh;
     }
@@ -612,8 +653,24 @@ body {
         font-size: 40px
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     #HOME {
         height: 80vh;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .mt-200 {
@@ -649,6 +706,75 @@ body {
     }
 }
 
+@media screen and (max-width: 411px) {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mainheading {
+        padding: 30px 0;
+        font-size: 40px
+    }
+
+    .md-client-center {
+        text-align: center;
+    }
+
+    #HOME {
+        height: 100vh;
+    }
+
+    .mt-200 {
+        margin-top: 180px;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
+    }
+
+    /* how we are section  */
+    .md-center {
+        text-align: center;
+    }
+
+    .md-width {
+        width: 100% !important;
+    }
+
+    .md-center {
+        text-align: center;
+    }
+
+    .md-p-r-5 {
+        margin-left: 2%;
+    }
+
+    .btn-custome {
+        width: 180px;
+    }
+
+    .media-mt-60 {
+        margin-top: 60px;
+    }
+
+    .user {
+        margin-top: -11%;
+    }
+
+    .media-card-width {
+        width: 21rem;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .row {
         margin-left: 0px;
@@ -660,12 +786,28 @@ body {
         font-size: 40px
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     #HOME {
         height: 95vh;
     }
 
     .mt-200 {
         margin-top: 180px;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .md-p-r-5 {
@@ -696,8 +838,24 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     #HOME {
         height: 110vh;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .mt-200 {
@@ -728,8 +886,24 @@ body {
         font-size: 40px
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     #HOME {
         height: 70vh;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .mt-200 {
@@ -755,6 +929,10 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -762,6 +940,18 @@ body {
 
     #HOME {
         height: 160vh;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .img-fluid {
@@ -795,6 +985,10 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -806,6 +1000,18 @@ body {
 
     .mt-200 {
         margin-top: 200px;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .img-fluid {
@@ -827,6 +1033,10 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -844,6 +1054,18 @@ body {
         height: 155vh;
     }
 
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
+    }
+
     .md-mt-5 {
         margin-top: 5px;
     }
@@ -855,6 +1077,10 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -862,6 +1088,18 @@ body {
 
     #HOME {
         height: 160vh;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .mt-200 {
@@ -891,6 +1129,10 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -898,6 +1140,18 @@ body {
 
     #HOME {
         height: 160vh;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .mt-200 {
@@ -927,6 +1181,10 @@ body {
         margin-right: 0px;
     }
 
+    .md-client-center {
+        text-align: center;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -938,6 +1196,18 @@ body {
 
     .mt-200 {
         margin-top: 200px;
+    }
+
+    .feature-font-bold {
+        font-size: 30px;
+    }
+
+    .feature-font-light {
+        font-size: 30px;
+    }
+
+    .lora-bold {
+        font-size: 30px;
     }
 
     .md-center {
