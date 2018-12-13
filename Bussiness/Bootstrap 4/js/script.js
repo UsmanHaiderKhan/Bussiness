@@ -71,3 +71,25 @@ $(function () {
         return false;
     });
 });
+
+
+/*===================== Load More Images ======================*/
+$(document).ready(function () {
+
+    $('.loadMore').loadMoreResults({
+        displayedItems: 3,
+        showItems: 3
+
+    });
+
+});
+//$(document).ready(function () {
+//    $('.loadMore').loadMoreResults({
+//        displayedItems: 3
+//    });
+//});
+//$(document).ready(function () {
+//    $('.loadMore').loadMoreResults({
+//        showItems: 3
+//    });
+//});

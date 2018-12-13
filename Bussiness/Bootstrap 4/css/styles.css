@@ -42,6 +42,7 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    scroll-behavior: smooth;
 }
 
 .logo-font {
@@ -132,6 +133,9 @@ body {
             border: 1px solid #1a11bc;
             transition: font-size 400ms linear;
         }*/
+.start {
+    text-align: start;
+}
 
 .mainheading {
     font-size: 65px;
@@ -155,7 +159,8 @@ body {
     transition: 0.3s;
     cursor: pointer;
     width: 220px;
-    height: 42px;
+    height: 58px;
+    padding: 15px;
 }
 
     #HOME .button_design_1:hover {
@@ -344,11 +349,11 @@ body {
     position: absolute;
     opacity: 0;
     transition: all .3s ease;
-    background-color: #008000;
+    background-color: #4eba84;
 }
 
 .box:hover .overlay {
-    opacity: 1;
+    opacity: 0.8;
 }
 
 .text {
@@ -364,13 +369,17 @@ body {
     width: 0;
     top: 0;
     left: 0;
-    background-color: #008000;
+    background-color: #4eba84;
 }
 
 .box:hover .overlay-left {
     width: 100%;
 }
 /*======= finish =======*/
+.none-style:hover {
+    text-decoration: none;
+}
+
 .card-width {
     width: 22rem;
 }
@@ -393,6 +402,23 @@ body {
     height: auto;
 }
 
+.name-font {
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #4eba84;
+    text-transform: uppercase;
+    text-align: start;
+}
+
+.name-font-light {
+    font-family: 'Lato', sans-serif;
+    font-weight: 200;
+    font-size: 16px;
+    color: #a3a4a4;
+    text-transform: uppercase;
+}
+
 .comma-size {
     font-size: 14px
 }
@@ -407,13 +433,9 @@ body {
     margin-bottom: 120px;
 }
 
-#footer {
-    background-color: #18191b;
-    width: 100%;
-}
 
 .bg-image {
-    background-image: url('../../Images/we.png');
+    background-image: url('../../Images/footer.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -434,7 +456,106 @@ body {
 .mt-40 {
     margin-top: 40px;
 }
+
+.home-address {
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: white;
+}
+
+.input-text {
+    width: 100%;
+    height: 38px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5%;
+    color: white;
+}
+
+::-moz-placeholder {
+    color: #a3a4a4;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+
+.text-are {
+    width: 100%;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 4px;
+    padding: 5%;
+    color: white;
+}
+
+.ml-5-c {
+    margin-left: 32px;
+}
+
+.btn-bg-img {
+}
+
+.btn-send {
+    width: 100%;
+    height: 41px;
+    background: #fff;
+}
+
+.foot {
+    border: 1px solid #c0c0c1;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.self-align {
+    align-self: center;
+}
+/*=============== Load More ===============*/
+.lesss {
+    background-color: #000;
+    clear: both;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    margin-top: 6px;
+    padding: 6px 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 320px;
+}
+
 /*=================== Media Queries ===================*/
+@media screen and (max-width: 1024px) {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mainheading {
+        padding: 30px 0;
+        font-size: 40px
+    }
+
+    #HOME {
+        height: 50vh;
+    }
+
+    .mt-200 {
+        margin-top: 200px;
+    }
+
+
+    .user {
+        margin-top: -14%;
+    }
+
+    .media-card-width {
+        width: 18rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .row {
         margin-left: 0px;
@@ -464,6 +585,19 @@ body {
 
     .md-mt-5 {
         margin-top: 5px;
+    }
+
+    .media-mt-60 {
+        margin-top: 60px;
+    }
+
+    .user {
+        margin-top: -20%;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: white;
+        border-color: white;
     }
 }
 
@@ -505,6 +639,14 @@ body {
     .btn-custome {
         width: 180px;
     }
+
+    .media-mt-60 {
+        margin-top: 60px;
+    }
+
+    .user {
+        margin-top: -11%;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -533,6 +675,14 @@ body {
     .btn-custome {
         width: 160px;
     }
+
+    .media-mt-60 {
+        margin-top: 60px;
+    }
+
+    .media-card-width {
+        width: 18rem;
+    }
 }
 
 @media screen and (max-width: 360px) {
@@ -541,8 +691,13 @@ body {
         font-size: 40px
     }
 
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
     #HOME {
-        height: 95vh;
+        height: 110vh;
     }
 
     .mt-200 {
@@ -553,9 +708,12 @@ body {
         margin-top: 5px;
     }
 
-    .row {
-        margin-left: 0px;
-        margin-right: 0px;
+    .media-card-width {
+        width: 18rem;
+    }
+
+    .media-mt-60 {
+        margin-top: 60px;
     }
 }
 /*=================== Land Scape Quheries ===================*/
@@ -581,6 +739,14 @@ body {
     .img-fluid {
         height: 63vh;
     }
+
+    .user {
+        margin-top: -14%;
+    }
+
+    .media-card-width {
+        width: 18rem;
+    }
 }
 
 @media screen and (max-width: 846px) and (orientation: landscape) {
@@ -598,6 +764,10 @@ body {
         height: 160vh;
     }
 
+    .img-fluid {
+        height: 140vh !important;
+    }
+
     .mt-200 {
         margin-top: 200px;
     }
@@ -608,6 +778,14 @@ body {
 
     .img-fluid {
         height: 100vh;
+    }
+
+    .md-mt-5 {
+        margin-top: 5px;
+    }
+
+    .media-mt-60 {
+        margin-top: 60px;
     }
 }
 
@@ -636,6 +814,10 @@ body {
 
     .md-mt-5 {
         margin-top: 5px;
+    }
+
+    .media-mt-60 {
+        margin-top: 60px;
     }
 }
 
@@ -693,6 +875,50 @@ body {
     .md-p-r-5 {
         margin-left: 12%;
     }
+
+    .media-card-width {
+        width: 30rem;
+    }
+
+    .user {
+        margin-top: -8%;
+    }
+}
+
+@media screen and (max-width: 667px) and (orientation: landscape) {
+    .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .mainheading {
+        padding: 30px 0;
+        font-size: 40px
+    }
+
+    #HOME {
+        height: 160vh;
+    }
+
+    .mt-200 {
+        margin-top: 200px;
+    }
+
+    .md-center {
+        text-align: center;
+    }
+
+    .md-p-r-5 {
+        margin-left: 12%;
+    }
+
+    .media-card-width {
+        width: 30rem;
+    }
+
+    .user {
+        margin-top: -8%;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
@@ -720,5 +946,9 @@ body {
 
     .md-p-r-5 {
         margin-left: 12%;
+    }
+
+    .media-card-width {
+        width: 30rem;
     }
 }
