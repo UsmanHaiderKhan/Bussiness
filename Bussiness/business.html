@@ -5,9 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Lora:400,700|Montserrat:300,400,500,600,700,800|Open+Sans:300,400,600,700,800|Poppins:300,400,600,700,800,900" rel="stylesheet">
-    <link href="Bootstrap 4/css/font-awesome.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <!--<link href="Bootstrap 4/css/font-awesome.css" rel="stylesheet" />-->
     <link href="Bootstrap 4/css/bootstrap.min.css" rel="stylesheet" />
     <link href="Bootstrap 4/css/animate.css" rel="stylesheet" />
+    <link href="lightbox2-master/dist/css/lightbox.css" rel="stylesheet" />
+    <!--<link href="Bootstrap 4/css/style.css" rel="stylesheet" />-->
     <link href="Bootstrap 4/css/styles.css" rel="stylesheet" />
     <title>Business | Theme</title>
 </head>
@@ -29,16 +32,16 @@
                             <a class="nav-link active scroll" href="#HOME">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#BLOG">ABOUT</a>
+                            <a class="nav-link scroll" href="#how_we">ABOUT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#SERVICES">SERVICES</a>
+                            <a class="nav-link scroll" href="#services">SERVICES</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#GALLERY">PORTFOLIO</a>
+                            <a class="nav-link scroll" href="#feature">PORTFOLIO</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link scroll" href="#CONTACT">CONTACT</a>
+                            <a class="nav-link scroll" href="#footer">CONTACT</a>
                         </li>
                     </ul>
                 </div>
@@ -47,11 +50,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-7 col-sm-12 mt-200">
-                    <h1 class="mainheading animated slideInDown">We're here to create your online presense</h1>
+                    <h1 class="mainheading animated slideInDown start">We're here to create your online presense</h1>
                     <p class="text-white text-justify pera-text">
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                     </p>
-                    <a href="#" class="scroll btn button_design_1">START TODAY</a>
+                    <div class="start">
+                        <a href="#" class="scroll btn button_design_1">START TODAY</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,7 +197,7 @@
             <div class="row mt-90">
                 <div class="col-md-4 col-sm-12 mt-5">
                     <div class="card">
-                        <img src="Images/user.png" class="user" />
+                        <img src="Images/user.png" class="user self-align" />
                         <div class="card-body">
                             <h4 class="card-title text-center">Personal Touch</h4>
                             <p class="card-text">
@@ -203,7 +208,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12 mt-5">
                     <div class="card">
-                        <img src="Images/flag.png" class="user" />
+                        <img src="Images/flag.png" class="user self-align" />
                         <div class="card-body">
                             <h4 class="card-title text-center">Unique Solutions</h4>
                             <p class="card-text">
@@ -214,7 +219,7 @@
                 </div>
                 <div class="col-md-4 col-sm-12 mt-5">
                     <div class="card">
-                        <img src="Images/brush.png" class="user" />
+                        <img src="Images/brush.png" class="user self-align" />
                         <div class="card-body">
                             <h4 class="card-title text-center">Help in Permotion</h4>
                             <p class="card-text">
@@ -245,10 +250,17 @@
                     </p>
                 </div>
             </div>
-            <div class="row mt-80">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card card-width">
-                        <img src="Images/latest/latest1.png" class="card-img-top" />
+            <div class="row loadMore mt-80" style="text-align: center">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest1.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest1.png" class="fas fa-search fa-3x text-white none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">LOROM IPSUM DOLOR</h5>
                             <p class="card-text">
@@ -258,9 +270,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card card-width">
-                        <img src="Images/latest/latest2.png" class="card-img-top" />
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest2.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest2.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">LOROM IPSUM DOLOR</h5>
                             <p class="card-text">
@@ -270,15 +289,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="card card-width">
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
                         <div class="box">
                             <img src="Images/latest/latest3.png" class="card-img-top" />
                             <div class="overlay overlay-left">
-                                <div class="text">Search</div>
+                                <div class="text">
+                                    <a href="Images/latest/latest3.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
                             </div>
                         </div>
-                        <!--<img src="Images/latest/latest3.png" class="card-img-top"/>-->
                         <div class="card-body">
                             <h5 class="card-title">LOROM IPSUM DOLOR</h5>
                             <p class="card-text">
@@ -288,9 +308,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="card card-width">
-                        <img src="Images/latest/latest4.png" class="card-img-top" />
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest4.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest4.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">LOROM IPSUM DOLOR</h5>
                             <p class="card-text">
@@ -300,9 +327,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="card card-width">
-                        <img src="Images/latest/latest5.png" class="card-img-top" />
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest5.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest5.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">LOROM IPSUM DOLOR</h5>
                             <p class="card-text">
@@ -312,9 +346,73 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 mt-5">
-                    <div class="card card-width">
-                        <img src="Images/latest/latest6.png" class="card-img-top" />
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest6.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest6.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">LOROM IPSUM DOLOR</h5>
+                            <p class="card-text">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest4.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest4.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">LOROM IPSUM DOLOR</h5>
+                            <p class="card-text">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest5.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest5.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">LOROM IPSUM DOLOR</h5>
+                            <p class="card-text">
+                                Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod,
+                                iaculis eu lacus nunc mi elit.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12 mt-5 item">
+                    <div class="card card-width media-card-width">
+                        <div class="box">
+                            <img src="Images/latest/latest6.png" class="card-img-top" />
+                            <div class="overlay overlay-left">
+                                <div class="text">
+                                    <a href="Images/latest/latest6.png" class="fas fa-search fa-3x text-white  none-style" data-lightbox="image-1"></a>
+                                </div>
+                            </div>
+                        </div>
                         <div class="card-body">
                             <h5 class="card-title">LOROM IPSUM DOLOR</h5>
                             <p class="card-text">
@@ -326,80 +424,87 @@
                 </div>
             </div>
             <div class="mt-60 text-center animated pulse infinite">
-                <a href="#" class="show-font">Show More</a>
-                <div style="display: block;">
-                    <img src="Images/arrow.png" />
-                </div>
+                <!--<a href="#" class="show-font more">
+                    Show More
+                    <div style="display: block;">
+                        <img src="Images/arrow.png" />
+                    </div>
+                </a>-->
+                <!--<button class="btn-load-more">Load More</button>-->
             </div>
         </div>
     </section>
-    <section id="client" class="p-5 mt-80">
-        <div class="container">
+    <section id="client" class="mt-80">
+        <div class="container p-5">
             <div class="row">
                 <div class="col-md-8 offset-md-2">
-                    <h1 class="feature-font-light text-center capital-text">happy <span class="feature-font-bold capital-text">Clients</span></h1>
+                    <h1 class="feature-font-light text-center capital-text">happy <span class="feature-font-bold capital-text"> Clients</span></h1>
                 </div>
             </div>
             <div class="row mt-90">
-                <div class="col-md-6 col-sm-12">
+                <div class="col-lg-6 col-md-12 mt-5">
                     <div class="card w-100 card-shadow">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    img
+                                    <img src="Images/Client/larki.png" />
                                 </div>
                                 <div class="col-md-8">
                                     <p class="text-justify">
                                         <sup class="comma-size">''</sup>  Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub class="comma-size">''</sub>
                                     </p>
+                                    <p class="name-font">Usman Khan,<span class="name-font-light"> Project Manager</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 ">
+                <div class="col-lg-6 col-md-12 mt-5">
                     <div class="card w-100 card-shadow">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    img
+                                    <img src="Images/Client/larka1.png" />
                                 </div>
                                 <div class="col-md-8">
                                     <p class="text-justify">
                                         <sup class="comma-size">''</sup>  Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub class="comma-size">''</sub>
                                     </p>
+                                    <p class="name-font">Awise ,<span class="name-font-light"> Creative Director</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mt-5">
+                <div class="col-lg-6 col-md-12 mt-5">
                     <div class="card w-100 card-shadow">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    img
+                                    <img src="Images/Client/larka2.png" />
                                 </div>
                                 <div class="col-md-8">
                                     <p class="text-justify">
                                         <sup class="comma-size">''</sup> Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub class="comma-size">''</sub>
                                     </p>
+                                    <p class="name-font">Zam Cristfar,<span class="name-font-light"> Manager</span></p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-12 mt-5">
+                <div class="col-lg-6 col-md-12 mt-5">
                     <div class="card w-100 card-shadow">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-md-4">
-                                    img
+                                    <img src="Images/Client/larka3.png" />
                                 </div>
                                 <div class="col-md-8">
                                     <p class="text-justify">
                                         <sup class="comma-size">''</sup> Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<sub class="comma-size">''</sub>
                                     </p>
+                                    <p class="name-font">Zam Cristfar,<span class="name-font-light">Manager</span></p>
                                 </div>
                             </div>
                         </div>
@@ -409,36 +514,169 @@
         </div>
         <div class="mb-120"></div>
     </section>
-    <section id="footer" class="p-5">
-        <div class="container">
+    <section id="footer"></section>
+    <!-- Footer -->
+    <footer class="bg-image p-5 text-white">
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase font-weight-bold">
+                        <img src="Images/logo.png" />
+                    </h6>
+                    <p class="mt-40">
+                        Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit amet, consectetur
+                        adipisicing elit.
+                    </p>
+                    <div class="d-flex justify-content-around mt-28">
+                        <i class="fab fa-twitter text-white "></i>
+                        <i class="fab fa-facebook-f text-white"></i>
+                        <i class="fab fa-google-plus-g text-white"></i>
+                        <i class="fab fa-dribbble text-white"></i>
+                        <i class="fab fa-pinterest text-white"></i>
+                        <i class="fab fa-vimeo-v text-white"></i>
+                        <i class="fab fa-flickr text-white"></i>
+                    </div>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 offset-lg-1 col-xl-3">
+                    <!-- Links -->
+                    <h6 class="footer-font-bold media-mt-60">Contact Us</h6>
+                    <p class="mt-40">
+                        <i class="fa fa-home mr-3"></i>35/4 Lake Circus,Los Angle  <span class="ml-5-c">1205 UNITED STATES</span>
+                    </p>
+                    <p>
+                        <i class="fa fa-phone mr-3"></i> + 01 234 567 88
+                    </p>
+                    <p>
+                        <i class="fa fa-envelope mr-3"></i> info@example.com
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-4 offset-lg-1 col-xl-3 p-0">
+                    <!-- Links -->
+                    <h1 class="text-white footer-font-bold media-mt-60">GET IN TOUCH</h1>
+                    <form action="#" method="post" class="w-100 mt-40">
+                        <div class="form-group">
+                            <input class="input-text" type="text" required="" placeholder="Name" />
+                        </div>
+                        <div class="form-group">
+                            <input class="input-text" type="email" required="" placeholder="Email" />
+                        </div>
+                        <div class="form-group">
+                            <textarea class="text-are" type="text" rows="3" required="" placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-send btn-bg-img" type="submit" style="background-image: url('../../Images/arrow-btn.png');
+                                                                                                                   background-repeat: no-repeat;
+                                                                                                                   background-position: center;"></button>
+                        </div>
+                    </form>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+        <!-- Footer Links -->
+        <!-- Copyright -->
+        <div class="text-center">
+            <p class="text-center text-white p-2">Copy Right &copy; 2018 Desgined by- BizinaWeb</p>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+    <!--<section id="footer" class="bg-image">
+        <div class="container p-5">
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-12">
                     <img src="Images/logo.png" />
                     <p class="footer-text mt-40">
                         Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
                     </p>
-                    <div class="d-flex">
-                        <span class="fa fa-facebook"></span>
-                        <span class="fa fa-facebook"></span>
-                        <span class="fa fa-facebook"></span>
-                        <span class="fa fa-facebook"></span>
-                        <span class="fa fa-facebook"></span>
+                    <div class="d-flex justify-content-around mt-28">
+                        <i class="fab fa-twitter text-white "></i>
+                        <i class="fab fa-facebook-f text-white"></i>
+                        <i class="fab fa-google-plus-g text-white"></i>
+                        <i class="fab fa-dribbble text-white"></i>
+                        <i class="fab fa-pinterest text-white"></i>
+                        <i class="fab fa-vimeo-v text-white"></i>
+                        <i class="fab fa-flickr text-white"></i>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h1 class="text-white footer-font-bold">Contact us </h1>
+                <div class="col-lg-4 col-md-12">
+                    <h1 class="text-white footer-font-bold media-mt-60">Contact us </h1>
+                    <div class="mt-40">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fas fa-home text-white"></i>
+                            </div>
+                            <div class="col-md-10">
+                                <p class="home-address">
+                                    35/4 Lake Circus , Los angles-1205, UNITED STATES
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-28">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fas fa-phone text-white"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <p class="home-address">
+                                    +880 2-9114147
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-28">
+                        <div class="row">
+                            <div class="col-md-1">
+                                <i class="fas fa-envelope text-white"></i>
+                            </div>
+                            <div class="col-md-11">
+                                <p class="home-address">
+                                    info@thexyz.com
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <h1 class="text-white footer-font-bold">GET IN TOUCH</h1>
+                <div class="col-lg-4 col-md-12">
+                    <h1 class="text-white footer-font-bold media-mt-60">GET IN TOUCH</h1>
+                    <div class="row mt-40">
+                        <form action="#" method="post" class="w-100">
+
+                                <div class="form-group">
+                                    <input class="input-text" type="text" required="" placeholder="Name" />
+                                </div>
+                                <div class="form-group">
+                                    <input class="input-text" type="email" required="" placeholder="Email" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="text-are" type="text" rows="3" required="" placeholder="Message"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <button class="btn btn-send" type="submit"><i class="fas fa-paper-plane"></i></button>
+                                </div>
+
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
+        <hr class="foot" />
+        <p class="text-center text-white p-2 mb-0">Copy Right &copy; 2018 Desgined by- BizinaWeb</p>
+    </section>-->
     <!-- Script files -->
     <script src="Bootstrap 4/js/jquery.slim.min.js"></script>
     <script src="Bootstrap 4/js/poper.min.js"></script>
     <script src="Bootstrap 4/js/bootstrap.min.js"></script>
+    <script src="lightbox2-master/dist/js/lightbox.js"></script>
+    <script src="Bootstrap 4/js/loadMoreResults.js"></script>
     <!-- Custome Script File -->
     <script src="Bootstrap 4/js/script.js"></script>
 </body>
