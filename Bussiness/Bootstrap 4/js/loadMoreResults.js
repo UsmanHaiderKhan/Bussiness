@@ -17,19 +17,30 @@
     'use strict';
 
     $.fn.loadMoreResults = function (options) {
+        var img = $('<img />',
+            {
+
+                src: 'Images/arrow.png',
+
+            })
+            .appendTo($('#mydiv'));
+
 
         var defaults = {
             tag: {
                 name: 'div',
-                'class': 'item'
+                'class': 'item',
+                name2: 'img'
             },
             displayedItems: 5,
             showItems: 5,
-            button: {
-                'class': 'btn-load-more',
+            a: {
+                'class': 'show-font',
                 text: 'Show More'
             }
+
         };
+
 
         var opts = $.extend(true, {}, defaults, options);
 
@@ -47,7 +58,7 @@
             if (key === 'showItems') {
                 formatCheck(key, val, null, 'number');
             }
-            if (key === 'button') {
+            if (key === 'a') {
                 formatCheck(key, val, 'class', 'string');
             }
         });
@@ -71,9 +82,11 @@
                 sc = parseInt(opts.showItems);
 
             $list.find(' > ' + opts.tag.name + '.' + opts.tag.class + ':lt(' + dc + ')').css("display", "inline-block");
+            $list.find(' > ' + opts.tag.name2 + '.' + opts.tag.class + ':lt(' + dc + ')').css("display", "inline-block");
             $list.find(' > ' + opts.tag.name + '.' + opts.tag.class + ':gt(' + (dc - 1) + ')').css("display", "none");
+            $list.find(' > ' + opts.tag.name2 + '.' + opts.tag.class + ':gt(' + (dc - 1) + ')').css("display", "none");
 
-            $list.parent().append('<button class="btn-view ' + opts.button.class + '">' + opts.button.text + '</button>');
+            $list.parent().append('<a class="btn-view ' + opts.a.class + '">' + opts.a.text + '</a>');
             $list.parent().on("click", ".btn-view", function (e) {
                 e.preventDefault();
                 dc = (dc + sc <= lc) ? dc + sc : lc;

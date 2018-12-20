@@ -34,7 +34,7 @@
     src: url('../../Fonts/tahoma.ttf') format('truetype');
 }
 /*=================== Header Section Styling ===================*/
-body {
+html, body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -96,7 +96,7 @@ body {
 
 .nav-item {
     position: relative;
-    padding: 14px;
+    padding: 8px;
 }
 
 .fixed-top.scrolled {
@@ -262,10 +262,13 @@ body {
     background: transparent;
     border: 2px solid #21b66b;
     color: #21b66b;
+    text-decoration: none;
     text-transform: uppercase;
+    padding: 10px;
 }
 
     .btn-custome:hover {
+        text-decoration: none;
         background-color: #21b66b;
         color: white;
     }
@@ -292,10 +295,12 @@ body {
 
 .card {
     background-color: #ffffff;
+    border-radius: 0px;
 }
 
 .card-title {
     text-transform: uppercase;
+    font-size: 24px !important;
 }
 
 .user {
@@ -339,7 +344,7 @@ body {
 }
 
 .padd {
-    padding: 44px;
+    padding: 40px;
 }
 
 /*============= Latest Update Gallery ==============*/
@@ -392,7 +397,8 @@ body {
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: bold;
-    color: #21b66b;
+    color: #21b66b !important;
+    cursor: pointer;
 }
 
     .show-font:hover {
@@ -400,10 +406,9 @@ body {
         color: #21b66b;
     }
 
-.btn-load-more {
+/*.btn-load-more {
     font-size: 14px;
-    color: #fff;
-    background-color: #00712c;
+    color: #21b66b;
     border: 0;
     outline: 0;
     padding: 10px 10px;
@@ -413,12 +418,12 @@ body {
     width: 250px;
     height: 60px;
     font-size: 17px;
-}
+}*/
 
-    .btn-load-more:hover {
+/*.btn-load-more:hover {
         background-color: #00481c;
         color: white;
-    }
+    }*/
 
 /*================ Client Styling =================*/
 #client {
@@ -445,7 +450,8 @@ body {
 }
 
 .comma-size {
-    font-size: 14px
+    font-size: 12px;
+    color: #7b7b7b;
 }
 
 .card-shadow {
@@ -455,7 +461,7 @@ body {
 }
 
 .mb-120 {
-    margin-bottom: 120px;
+    margin-bottom: 120px !important;
 }
 
 
@@ -497,6 +503,7 @@ body {
     border-radius: 4px;
     padding: 5%;
     color: white;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 ::-moz-placeholder {
@@ -536,6 +543,16 @@ body {
 .self-align {
     align-self: center;
 }
+
+.make-simple {
+    text-decoration: none;
+    color: white;
+}
+
+    .make-simple:hover {
+        text-decoration: none;
+        color: white;
+    }
 /*=============== Load More ===============*/
 .lesss {
     background-color: #000;
@@ -587,6 +604,11 @@ body {
         margin-right: 0px;
     }
 
+    .bg-color-light {
+        background-color: rgba(0, 0, 0, 0.9);
+        opacity: 0.9;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
@@ -621,7 +643,7 @@ body {
     }
 
     .img-fluid {
-        height: 60vh;
+        height: 100%;
     }
 
     .md-mt-5 {
@@ -639,6 +661,16 @@ body {
     .navbar-light .navbar-toggler {
         color: white;
         border-color: white;
+    }
+
+
+    .text-description {
+        font-size: 23px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 15px !important;
     }
 }
 
@@ -708,12 +740,25 @@ body {
     .user {
         margin-top: -11%;
     }
+
+    .text-description {
+        font-size: 23px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 15px !important;
+    }
 }
 
 @media screen and (max-width: 411px) {
     .row {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .text-description {
+        font-size: 30px;
     }
 
     .mainheading {
@@ -781,6 +826,15 @@ body {
     .media-card-width {
         width: 21rem;
     }
+
+    .text-description {
+        font-size: 23px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 15px !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -831,7 +885,16 @@ body {
     }
 
     .media-card-width {
-        width: 18rem;
+        width: 20rem;
+    }
+
+    .text-description {
+        font-size: 23px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 15px !important;
     }
 }
 
@@ -881,6 +944,15 @@ body {
     .media-mt-60 {
         margin-top: 60px;
     }
+
+    .text-description {
+        font-size: 23px;
+    }
+
+    .card-title {
+        font-weight: bold;
+        font-size: 15px !important;
+    }
 }
 /*=================== Land Scape Quheries ===================*/
 @media screen and (max-width: 1024px) and (orientation: landscape) {
@@ -896,6 +968,15 @@ body {
 
     .md-client-center {
         text-align: center;
+    }
+
+    .med-img-width-100 {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .img-fluid {
+        height: 100%;
     }
 
     #HOME {
@@ -918,10 +999,6 @@ body {
         margin-top: 200px;
     }
 
-    .img-fluid {
-        height: 63vh;
-    }
-
     .user {
         margin-top: -14%;
     }
@@ -935,6 +1012,11 @@ body {
     .row {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .med-img-width-100 {
+        width: 28% !important;
+        height: auto;
     }
 
     .md-client-center {
@@ -963,9 +1045,7 @@ body {
         font-size: 30px;
     }
 
-    .img-fluid {
-        height: 140vh !important;
-    }
+
 
     .mt-200 {
         margin-top: 200px;
@@ -975,9 +1055,6 @@ body {
         margin-top: 50px;
     }
 
-    .img-fluid {
-        height: 100vh;
-    }
 
     .md-mt-5 {
         margin-top: 5px;
@@ -990,12 +1067,21 @@ body {
     .user {
         margin-top: -19%;
     }
+
+    .text-description {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
     .row {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .med-img-width-100 {
+        width: 28% !important;
+        height: auto;
     }
 
     .md-client-center {
@@ -1027,9 +1113,7 @@ body {
         font-size: 30px;
     }
 
-    .img-fluid {
-        height: 140vh;
-    }
+
 
     .md-mt-5 {
         margin-top: 5px;
@@ -1037,6 +1121,10 @@ body {
 
     .media-mt-60 {
         margin-top: 60px;
+    }
+
+    .text-description {
+        font-size: 25px;
     }
 }
 
@@ -1046,6 +1134,11 @@ body {
         margin-right: 0px;
     }
 
+    .med-img-width-100 {
+        width: 28% !important;
+        height: auto;
+    }
+
     .md-client-center {
         text-align: center;
     }
@@ -1063,9 +1156,7 @@ body {
         margin-top: 200px;
     }
 
-    .img-fluid {
-        height: 155vh;
-    }
+
 
     .feature-font-bold {
         font-size: 30px;
@@ -1082,12 +1173,21 @@ body {
     .md-mt-5 {
         margin-top: 5px;
     }
+
+    .text-description {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 740px) and (orientation: landscape) {
     .row {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .med-img-width-100 {
+        width: 28% !important;
+        height: auto;
     }
 
     .md-client-center {
@@ -1133,6 +1233,10 @@ body {
 
     .user {
         margin-top: -8%;
+    }
+
+    .text-description {
+        font-size: 25px;
     }
 }
 
@@ -1142,6 +1246,11 @@ body {
         margin-right: 0px;
     }
 
+    .med-img-width-100 {
+        width: 28% !important;
+        height: auto;
+    }
+
     .md-client-center {
         text-align: center;
     }
@@ -1186,12 +1295,21 @@ body {
     .user {
         margin-top: -8%;
     }
+
+    .text-description {
+        font-size: 25px;
+    }
 }
 
 @media screen and (max-width: 640px) and (orientation: landscape) {
     .row {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .med-img-width-100 {
+        width: 28% !important;
+        height: auto;
     }
 
     .md-client-center {
@@ -1204,7 +1322,7 @@ body {
     }
 
     #HOME {
-        height: 160vh;
+        height: 180vh !important;
     }
 
     .mt-200 {
@@ -1233,5 +1351,9 @@ body {
 
     .media-card-width {
         width: 30rem;
+    }
+
+    .text-description {
+        font-size: 25px;
     }
 }

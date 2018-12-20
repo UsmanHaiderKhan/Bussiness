@@ -83,13 +83,8 @@ $(document).ready(function () {
     });
 
 });
-//$(document).ready(function () {
-//    $('.loadMore').loadMoreResults({
-//        displayedItems: 3
-//    });
-//});
-//$(document).ready(function () {
-//    $('.loadMore').loadMoreResults({
-//        showItems: 3
-//    });
-//});
+
+/*==================== Smooth Scroll ===================*/
+$(function () {
+    $('a').smoothScroll();
+})
