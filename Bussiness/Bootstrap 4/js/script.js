@@ -88,3 +88,16 @@ $(document).ready(function () {
 $(function () {
     $('a').smoothScroll();
 })
+/*==================== Remove the class on scroll ===================*/
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    //>=, not <=
+    if (scroll >= 50) {
+        //clearHeader, not clearheader - caps H
+        $("nav").removeClass("pt-45");
+    }
+    if (scroll == 0) {
+        $("nav").addClass("pt-45");
+    }
+});
