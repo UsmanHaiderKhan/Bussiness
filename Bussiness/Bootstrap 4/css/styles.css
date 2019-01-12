@@ -33,8 +33,10 @@
     font-family: 'tahoma';
     src: url('../../Fonts/tahoma.ttf') format('truetype');
 }
+
 /*=================== Header Section Styling ===================*/
-html, body {
+html,
+body {
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -44,6 +46,16 @@ html, body {
     background-attachment: fixed;
     scroll-behavior: smooth;
 }
+
+.per-link {
+    text-decoration: none;
+    color: #636363;
+}
+
+    .per-link:hover {
+        text-decoration: none;
+        color: #636363;
+    }
 
 :focus {
     outline: 0px;
@@ -87,14 +99,17 @@ html, body {
 
 .pera-text {
     font-family: 'Lato-Light';
-    font-size: 18px;
+    font-size: 22px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
 }
 
 #HOME {
     background-image: url('../../Images/header.png');
     background-size: cover;
     position: relative;
-    height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -193,7 +208,6 @@ html, body {
         color: #21b66b;
     }
 
-
 /*=================== Services Section Styling ===================*/
 .mt-100 {
     margin-top: 100px;
@@ -205,17 +219,25 @@ html, body {
     font-weight: 900;
 }
 
-.pera-text-color {
-    color: #959595;
+.service-text-color {
+    color: #5a5a5a;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
 }
+
+.ser-desc-font {
+    color: #636363;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
 
 .head-text {
     font-size: 21px;
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
+    color: #212121;
 }
 
 .mt-80 {
@@ -238,6 +260,7 @@ html, body {
     text-decoration: none;
     color: black;
 }
+
 /*=================== What We Are Section ===================*/
 #how_we {
     background-color: #f5f5f5;
@@ -280,20 +303,50 @@ html, body {
 .btn-custome {
     width: 200px;
     height: 50px;
+    background: #21b66b;
+    border: 2px solid #21b66b;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    line-height: 23px;
+}
+
+    .btn-custome:hover {
+        text-decoration: none;
+        color: #21b66b;
+        background-color: #fff;
+        line-height: 23px;
+    }
+
+.btn-customes {
+    width: 200px;
+    height: 50px;
     background: transparent;
     border: 2px solid #21b66b;
     color: #21b66b;
     text-decoration: none;
     text-transform: uppercase;
     padding: 10px;
+    line-height: 23px;
 }
 
-    .btn-custome:hover {
+    .btn-customes:hover {
         text-decoration: none;
+        color: #fff;
+        line-height: 23px;
         background-color: #21b66b;
-        color: white;
     }
+
 /*=================== Feature Section ===================*/
+.bg-color-latest {
+    background-color: #21b66b;
+    border-radius: 50%;
+    padding: 25px;
+    width: 80px;
+    height: 80px;
+}
+
 .capital-text {
     text-transform: uppercase;
 }
@@ -322,11 +375,18 @@ html, body {
 .card-title {
     text-transform: uppercase;
     font-size: 24px !important;
+    color: #000000;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+}
+
+.card-text {
+    font-family: 'Open Sans', sans-serif;
+    color: #444444;
+    font-size: 16px;
 }
 
 .user {
-    width: 80px;
-    height: 80px;
     margin-top: -10%;
 }
 
@@ -376,6 +436,20 @@ html, body {
 
 /*============= Latest Update Gallery ==============*/
 /*======= start =======*/
+.no-border {
+    border: none;
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
+
+.latest-text-color {
+    font-size: 20px;
+    color: #5a5a5a;
+    font-family: 'Open Sans', sans-serif;
+}
+
 .box {
     position: relative;
     width: 100%;
@@ -390,6 +464,18 @@ html, body {
 
 .box:hover .overlay {
     opacity: 0.8;
+}
+
+.card-heading-text {
+    color: #5a5a5a;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px !important;
+}
+
+.card-desc-text {
+    color: #707070;
+    font-family: 'Lato-Light', sans-serif;
+    font-size: 17px;
 }
 
 .text {
@@ -411,6 +497,7 @@ html, body {
 .box:hover .overlay-left {
     width: 100%;
 }
+
 /*======= finish =======*/
 .none-style:hover {
     text-decoration: none;
@@ -459,6 +546,16 @@ html, body {
     height: auto;
 }
 
+.pt-120 {
+    padding-top: 120px;
+}
+
+.client-text {
+    color: #7b7b7b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
 .name-font {
     font-family: 'Lato', sans-serif;
     font-weight: 500;
@@ -482,9 +579,9 @@ html, body {
 }
 
 .card-shadow {
-    -webkit-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 11px -8px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 11px -8px rgba(0, 0, 0, 0.75);
 }
 
 .mb-120 {
@@ -509,6 +606,24 @@ html, body {
     font-family: 'Lato-Light';
     font-size: 18px;
     color: white;
+}
+
+.h-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+    .h-link:hover {
+        text-decoration: none;
+        color: #fff;
+    }
+
+.icons-color {
+    color: #bebebf;
+}
+
+.copy-right-color {
+    color: #a4a5a6;
 }
 
 .mt-40 {
@@ -573,13 +688,14 @@ html, body {
 
 .make-simple {
     text-decoration: none;
-    color: white;
+    color: #bebebf;
 }
 
     .make-simple:hover {
         text-decoration: none;
-        color: white;
+        color: #bebebf;
     }
+
 /*=============== Load More ===============*/
 .lesss {
     background-color: #000;
@@ -602,13 +718,21 @@ html, body {
         margin-right: 0px;
     }
 
+    .card-title {
+        font-size: 22px !important;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .text-description {
+        font-size: 32px;
+    }
+
     .mainheading {
         padding: 30px 0;
         font-size: 40px
-    }
-
-    #HOME {
-        height: 50vh;
     }
 
     .mt-200 {
@@ -657,10 +781,6 @@ html, body {
         font-size: 30px;
     }
 
-    #HOME {
-        height: 60vh;
-    }
-
     .mt-200 {
         margin-top: 200px;
     }
@@ -699,9 +819,29 @@ html, body {
         font-weight: bold;
         font-size: 15px !important;
     }
+
+    .ml-4 {
+        margin-left: 0 !important;
+    }
+
+    .btn-custome {
+        width: 160px;
+    }
+
+    .btn-customes {
+        width: 160px;
+    }
 }
 
 @media screen and (max-width: 414px) {
+    .pera-text {
+        font-size: 18px;
+    }
+
+    .p-5 {
+        padding: 0rem !important;
+    }
+
     .row {
         margin-left: 0px;
         margin-right: 0px;
@@ -720,10 +860,6 @@ html, body {
         text-align: center;
     }
 
-    #HOME {
-        height: 80vh;
-    }
-
     .feature-font-bold {
         font-size: 30px;
     }
@@ -739,6 +875,7 @@ html, body {
     .mt-200 {
         margin-top: 180px;
     }
+
     /* how we are section  */
     .md-center {
         text-align: center;
@@ -756,10 +893,6 @@ html, body {
         margin-left: 2%;
     }
 
-    .btn-custome {
-        width: 180px;
-    }
-
     .media-mt-60 {
         margin-top: 60px;
     }
@@ -775,6 +908,18 @@ html, body {
     .card-title {
         font-weight: bold;
         font-size: 15px !important;
+    }
+
+    .ml-4 {
+        margin-left: 0 !important;
+    }
+
+    .btn-custome {
+        width: 160px;
+    }
+
+    .btn-customes {
+        width: 160px;
     }
 }
 
@@ -801,10 +946,6 @@ html, body {
         text-align: center;
     }
 
-    #HOME {
-        height: 100vh;
-    }
-
     .mt-200 {
         margin-top: 180px;
     }
@@ -839,7 +980,7 @@ html, body {
     }
 
     .btn-custome {
-        width: 180px;
+        width: 160px;
     }
 
     .media-mt-60 {
@@ -862,6 +1003,10 @@ html, body {
         font-weight: bold;
         font-size: 15px !important;
     }
+
+    .ml-4 {
+        margin-left: 0 !important;
+    }
 }
 
 @media screen and (max-width: 375px) {
@@ -877,10 +1022,6 @@ html, body {
 
     .md-client-center {
         text-align: center;
-    }
-
-    #HOME {
-        height: 95vh;
     }
 
     .mt-200 {
@@ -903,9 +1044,18 @@ html, body {
         margin-left: 4%;
     }
 
+    .ml-4 {
+        margin-left: 0 !important;
+    }
+
     .btn-custome {
         width: 160px;
     }
+
+    .btn-customes {
+        width: 160px;
+    }
+
 
     .media-mt-60 {
         margin-top: 60px;
@@ -940,10 +1090,6 @@ html, body {
         text-align: center;
     }
 
-    #HOME {
-        height: 110vh;
-    }
-
     .feature-font-bold {
         font-size: 30px;
     }
@@ -961,7 +1107,7 @@ html, body {
     }
 
     .md-mt-5 {
-        margin-top: 5px;
+        margin-top: 10px;
     }
 
     .media-card-width {
@@ -981,11 +1127,24 @@ html, body {
         font-size: 15px !important;
     }
 }
+
 /*=================== Land Scape Quheries ===================*/
 @media screen and (max-width: 1024px) and (orientation: landscape) {
     .row {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    .card-title {
+        font-size: 22px !important;
+    }
+
+    .card-text {
+        font-size: 16px;
+    }
+
+    .text-description {
+        font-size: 32px;
     }
 
     .mainheading {
@@ -1004,10 +1163,6 @@ html, body {
 
     .img-fluid {
         height: 100%;
-    }
-
-    #HOME {
-        height: 70vh;
     }
 
     .feature-font-bold {
@@ -1033,6 +1188,13 @@ html, body {
     .media-card-width {
         width: 18rem;
     }
+
+    .ml-4 {
+        margin-left: 0px;
+    }
+
+    .btn-custome {
+    }
 }
 
 @media screen and (max-width: 846px) and (orientation: landscape) {
@@ -1041,8 +1203,12 @@ html, body {
         margin-right: 0px;
     }
 
+    .pera-text {
+        font-size: 20px;
+    }
+
     .med-img-width-100 {
-        width: 28% !important;
+        width: 65% !important;
         height: auto;
     }
 
@@ -1055,12 +1221,7 @@ html, body {
         font-size: 40px
     }
 
-    #HOME {
-        height: 160vh;
-    }
-
-    .navbar-light
-    .feature-font-bold {
+    .navbar-light .feature-font-bold {
         font-size: 30px;
     }
 
@@ -1072,8 +1233,6 @@ html, body {
         font-size: 30px;
     }
 
-
-
     .mt-200 {
         margin-top: 200px;
     }
@@ -1081,7 +1240,6 @@ html, body {
     .mt-80 {
         margin-top: 50px;
     }
-
 
     .md-mt-5 {
         margin-top: 5px;
@@ -1098,6 +1256,26 @@ html, body {
     .text-description {
         font-size: 25px;
     }
+
+    .ml-4 {
+        margin-left: 0 !important;
+    }
+
+    .btn-custome {
+        width: 160px;
+    }
+
+    .btn-customes {
+        width: 160px;
+    }
+
+    .card-title {
+        font-size: 15px !important;
+    }
+
+    .card-text {
+        font-size: 14px;
+    }
 }
 
 @media screen and (max-width: 823px) and (orientation: landscape) {
@@ -1107,7 +1285,7 @@ html, body {
     }
 
     .med-img-width-100 {
-        width: 28% !important;
+        width: 65% !important;
         height: auto;
     }
 
@@ -1118,10 +1296,6 @@ html, body {
     .mainheading {
         padding: 30px 0;
         font-size: 40px
-    }
-
-    #HOME {
-        height: 160vh;
     }
 
     .mt-200 {
@@ -1139,8 +1313,6 @@ html, body {
     .lora-bold {
         font-size: 30px;
     }
-
-
 
     .md-mt-5 {
         margin-top: 5px;
@@ -1175,15 +1347,9 @@ html, body {
         font-size: 40px
     }
 
-    #HOME {
-        height: 160vh;
-    }
-
     .mt-200 {
         margin-top: 200px;
     }
-
-
 
     .feature-font-bold {
         font-size: 30px;
@@ -1224,10 +1390,6 @@ html, body {
     .mainheading {
         padding: 30px 0;
         font-size: 40px
-    }
-
-    #HOME {
-        height: 160vh;
     }
 
     .feature-font-bold {
@@ -1287,10 +1449,6 @@ html, body {
         font-size: 40px
     }
 
-    #HOME {
-        height: 160vh;
-    }
-
     .feature-font-bold {
         font-size: 30px;
     }
@@ -1346,10 +1504,6 @@ html, body {
     .mainheading {
         padding: 30px 0;
         font-size: 40px
-    }
-
-    #HOME {
-        height: 180vh !important;
     }
 
     .mt-200 {
